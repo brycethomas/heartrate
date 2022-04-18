@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="hr.js"></script>
+  </head>
+  <body>
+    Heart rate thingy.
+    <form id="find_heart_rate">
+      <button type="submit">Find heart rate</button>
+    </form>
+    <div id="heart_rate_now" style="font-size: 400%;">
+      -123456
+    </div>
+    <script>
+      const form = document.getElementById('find_heart_rate');
+      form.addEventListener('submit', function(event) {
+          event.stopPropagation();
+          event.preventDefault();
+          let hr = new HeartRate();
+          hr.run();
+      });
+    </script>
+  </body>
+</html>
