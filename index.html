@@ -1,14 +1,18 @@
 <html>
   <head>
+    <link rel="stylesheet" href="hr.css">
     <script src="hr.js"></script>
   </head>
   <body>
-    Heart rate thingy.
+    <div class="container">
+    <div class="center">
     <form id="find_heart_rate">
-      <button type="submit">Find heart rate</button>
+      <button type="submit" id="btn_find_hr">Find heart rate</button>
     </form>
-    <div id="heart_rate_now" style="font-size: 400%;">
-      -123456
+    <div id="heart_rate_now">
+      0000000
+    </div>
+    </div>
     </div>
     <script>
       const form = document.getElementById('find_heart_rate');
